@@ -1,0 +1,75 @@
+@import  url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+*{
+    box-sizing: border-box;
+    margin:0 ;
+    font-family:Raleway ;
+   
+}
+.custom-table {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #7D2276;
+    padding: 8px;
+    text-align: center;
+}
+
+.inputcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.gradeinput {
+    padding:1.2% ;
+    background-color:hsl(305, 58%, 31%,50%) ;
+    width:15% ;
+    border-radius:5% ;
+    font-size:1.5em ;
+    color: black;
+    margin-left:7% ;
+    margin-right:0.8% ;
+    cursor: pointer;
+    flex: 1;
+}
+::placeholder {
+    color: black;
+    opacity: 1; 
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color:black;
+  }
+
+.addbutton {
+    padding:1.2% ;
+    background-color:#7D2276 ;
+    width:15% ;
+    border-radius:5% ;
+    font-size:1.5em ;
+    color: white;
+    margin-left:4% ;
+    margin-right:7% ;
+    cursor: pointer;
+    flex-shrink: 0; 
+}
+.calc,.clear{
+    padding:1.2% ;
+    background-color:#7D2276 ;
+    width:15% ;
+    border-radius:5% ;
+    font-size:1.5em ;
+    color: white;
+    margin-left:7% ;
+    margin-right:7% ;
+    margin-top:2% ;
+    cursor: pointer;
+    flex-shrink: 0; 
+}
+.clear{
+    margin-left:3% ;
+}

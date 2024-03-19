@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Raleway;
+}
+.wholebody{
+    margin-top:0% ;
+}
+
+main{
+    margin-top:0% ;
+}
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.calendar {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 2%;
+}
+
+.calendar th,
+.calendar td {
+    flex-direction: row;
+    border: 1px solid #7D2276;
+    padding: 8px;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: hsl(305, 57%, 31%, 78%);
+    color: white;
+}
+
+.calendar td {
+    background-color: hsl(305, 58%, 31%, 90%);
+    color: white;
+    cursor: pointer;
+}
+.calendar-header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0%; 
+    font-size: 1em; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    border: 1px solid #7D2276;
+    text-align: center;
+    border-radius: 5%;
+}
+
+
+.calendar-header button {
+    background-color: transparent; 
+    border: none; 
+    color: black; /* Text color */
+    font-size: 16px; 
+    cursor: pointer; /* Show pointer cursor */
+}
+
+
+.calendar-header button + button {
+    margin-left: 10px; 
+}
+
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:0%;
+    font-size:1.2em ;
+}
+.taskc{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+}
+
+.task-inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-inputs input,
+.task-inputs button {
+    margin-right: 10px;
+}
+
+/* Style for task list */
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style for individual tasks */
+#taskList li {
+    margin-bottom: 5px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .task-inputs {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .task-inputs input,
+    .task-inputs button {
+        margin: 5px; 
+    }
+    .calendar-container {
+        width: 100%;
+    }
+
+    .calendar {
+        width: 100%;
+    }
+}

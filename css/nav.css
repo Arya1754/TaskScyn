@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+        display: flex;
+        justify-content: space-between; /* Align items horizontally */
+        align-items: center; /* Align items vertically */
+        margin-top: 2.5%;
+        font-size: 1.5em;
+        background-color: hsl(305, 58%, 31%,20%) ;
+    }
+
+li{
+    padding-right:5% ;
+}
+
+  a:visited {
+    color:#7D2276;
+  }
+  
+  a:hover {
+    color:#1E011C;
+    cursor: pointer;
+  }
+
+/* Add the following rule for responsiveness */
+.profile.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top:1.5% ;
+    width:12%;
+    height: 85%;
+    border-radius: 100%;
+}
+
+

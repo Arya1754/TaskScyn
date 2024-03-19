@@ -1,0 +1,54 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.timer {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.start-button,
+.reset-button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+.timercontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    margin-bottom: 10px; /* Add some space between each input */
+}
+
+
+.gradeinput {
+    padding: 1.2%;
+    background-color: hsl(305, 58%, 31%, 50%);
+    width: 15%;
+    border-radius: 5%;
+    font-size: 1.5em;
+    color: black;
+    margin-left: 7%;
+    margin-right: 0.8%;
+    cursor: pointer;
+    flex: 1;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: black;
+}
+

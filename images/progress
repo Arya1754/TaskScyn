@@ -1,0 +1,8 @@
+// Function to update the progress bar based on percentage
+function updateProgressBar(percentage) {
+    const progressBar = document.getElementById('progress-bar');
+    progressBar.style.width = percentage + '%';
+}
+
+// Example usage: Update the progress bar to 50%
+updateProgressBar(50);
