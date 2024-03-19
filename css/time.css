@@ -2,18 +2,30 @@ body {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     margin: 50px;
+    margin-bottom:0% ;
 }
-
+.maincontainer{
+    margin-left:6% ;
+    text-align: center;
+    font-size:1.8em ;
+}
+.subpart2{
+    margin-top:2.5% ;
+}
 .timer {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 2.5%;
+    margin-top:5% ;
 }
 
-.start-button,
+.start-button,.pause-button,
 .reset-button {
-    padding: 10px;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+    margin-right:2% ;
     font-size: 1em;
     cursor: pointer;
+    border-radius:10% ;
 }
 
 label {
@@ -25,17 +37,14 @@ label {
     flex-direction: column;
 }
 
-.input-wrapper {
-    margin-bottom: 10px; /* Add some space between each input */
-}
-
-
 .gradeinput {
-    padding: 1.2%;
+    padding:0.5% ;
+    padding-right: 1.2%;
+    padding-left: 1.2%;
     background-color: hsl(305, 58%, 31%, 50%);
     width: 15%;
     border-radius: 5%;
-    font-size: 1.5em;
+    font-size: 1em;
     color: black;
     margin-left: 7%;
     margin-right: 0.8%;
@@ -51,4 +60,34 @@ label {
 ::-ms-input-placeholder {
     color: black;
 }
+@media screen and (max-width: 768px) {
+    .maincontainer {
+        font-size: 1.6em;
+    }
 
+    .timer {
+        font-size: 1.3em;
+    }
+
+    .start-button, .pause-button, .reset-button, .gradeinput {
+        font-size: 0.9em;
+        padding: 0.4em 0.8em;
+        margin-right: 1%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .maincontainer {
+        font-size: 1.2em;
+    }
+
+    .timer {
+        font-size: 1.1em;
+    }
+
+    .start-button, .pause-button, .reset-button, .gradeinput {
+        font-size: 0.8em;
+        padding: 0.3em 0.6em;
+        margin-right: 0.5%;
+    }
+}
