@@ -5,13 +5,13 @@
     padding:0% ;
     margin-left:20% ;
     margin-right:20% ;
-    border-radius:20% ;
+    border-radius:10vmin;
     padding-right:0.2% ;
 }
 .tophalf{
     height:100% ;
     width:70% ;
-    border-radius:20% ;
+    border-radius:10vmin ;
     border: 2px solid purple;
 }
 .write{

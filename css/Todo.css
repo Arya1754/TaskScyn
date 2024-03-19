@@ -61,7 +61,7 @@ main{
     display: flex;
     flex-direction: column;
     min-height:20vh ;
-    border-radius:5% ;
+    border-radius:10vmin ;
 
 }
 .content{
