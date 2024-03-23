@@ -20,7 +20,7 @@
                     <p class="mb-0">Login to your account</p>
                 </div>
                 <div class="card-body">
-                    <form id="loginForm" action="home.html" method="post">
+                    <form id="loginForm">
                         <div class="form-group">
                             <label for="username">Username:</label>
                             <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
@@ -29,7 +29,7 @@
                             <label for="password">Password:</label>
                             <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block"><a href="home.html">Login</a></button>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
                     </form>
                     <div class="text-center mt-3">
                         <p class="mb-0">Don't have an account? <a href="signup.html">Sign Up</a></p>
@@ -45,43 +45,11 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById('loginForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the default form submission
-            
-            // Get the values from the form fields
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-            
-            // Perform any client-side validation if needed
-            
-            // Example: Send the data to the server using AJAX
-            // Replace this with your actual AJAX request
-            // Here's a simple example using fetch
-            fetch('home.html', {
-                method: 'POST',
-                body: JSON.stringify({ username: username, password: password }),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Redirect to home page or perform any other action upon successful login
-                    window.location.href = 'home.html';
-                } else {
-                    // Handle error response
-                    console.error('Login failed');
-                }
-            })
-            .catch(error => {
-                // Handle network errors
-                console.error('Network error:', error);
-            });
-        });
-    });
-</script>
+<!-- Firebase JavaScript SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
 
+<!-- Firebase authentication script -->
+<script src="bundle.js"></script>
 </body>
 </html>
