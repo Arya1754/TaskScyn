@@ -2,10 +2,13 @@ const path=require('path')
 
 module.exports={
     mode:'development',
-    entry:'./js/login.js',
+    entry:{
+    login:'./login.js',
+    profile: './profile.js'
+},
     output:{
         path:path.resolve(__dirname),
-        filename:'bundle.js'
+        filename:'[name].bundle.js'
     },
     watch:true
 }
